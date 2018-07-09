@@ -28,35 +28,33 @@ enum Color: UInt32 {
 
 extension Color {
   var value: UIColor {
-    get {
-      switch self {
-      case .white:
-        return UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-      case .green:
-        return UIColor(red: 0.55, green: 0.64, blue: 0.02, alpha: 1.0)
-      case .darkGray:
-        return UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1.0)
-      case .lightGray:
-        return UIColor(red: 0.27, green: 0.27, blue: 0.27, alpha: 1.0)
-      }
+    switch self {
+    case .white:
+      return UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    case .green:
+      return UIColor(red: 0.55, green: 0.64, blue: 0.02, alpha: 1.0)
+    case .darkGray:
+      return UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1.0)
+    case .lightGray:
+      return UIColor(red: 0.27, green: 0.27, blue: 0.27, alpha: 1.0)
     }
   }
 }
 
-protocol StripyDelegate {
+protocol StripyDelegate: class {
   func removeStripe(_ stripe: Stripy)
 }
 
-class Stripy:CALayer, CAAnimationDelegate {
-  var stripeDelegate: StripyDelegate?
+class Stripy: CALayer, CAAnimationDelegate {
+  weak var stripeDelegate: StripyDelegate?
 
-  private let maxWidth:UInt32 = 200
-  private let minWidth:UInt32 = 10
+  private let maxWidth: UInt32 = 200
+  private let minWidth: UInt32 = 10
   private let animiationTime = 1.0
   private let transitionTime = 3.0
 
   private func timing() -> [NSNumber] {
-    var values:[Float] = [0]
+    var values: [Float] = [0]
 
     for _ in 0..<4 {
       let maximum = UInt32(90 - values.last!)
@@ -90,21 +88,19 @@ class Stripy:CALayer, CAAnimationDelegate {
     self.add(animation(), forKey: #keyPath(CALayer.opacity))
   }
 
-  func animationDidStop(_ anim: CAAnimation, finished flag: Bool)
-  {
+  func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
     if let stripeDelegate = self.stripeDelegate {
       stripeDelegate.removeStripe(self)
       removeFromSuperlayer()
     }
   }
 
-  init(viewWidth:CGFloat, viewHeight:CGFloat) {
+  init(viewWidth: CGFloat, viewHeight: CGFloat) {
     super.init()
 
     let width = CGFloat(arc4random_uniform(maxWidth) + minWidth)
     let xPosition = CGFloat(arc4random_uniform(UInt32(viewWidth - width)))
     let color: UIColor = Color.randomColor().value
-
 
     self.backgroundColor = color.cgColor
     self.frame = CGRect(x: xPosition, y: 0, width: width, height: viewHeight)

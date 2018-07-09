@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12511A04494E460AF4B113CE /* Pods_FletcherStripey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0809EC9CF68E91B389E713 /* Pods_FletcherStripey.framework */; };
 		5B9C896E20EAF048005A13CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C896D20EAF048005A13CD /* AppDelegate.swift */; };
-		5B9C897020EAF048005A13CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C896F20EAF048005A13CD /* ViewController.swift */; };
 		5B9C897320EAF048005A13CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C897120EAF048005A13CD /* Main.storyboard */; };
 		5B9C897520EAF04A005A13CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C897420EAF04A005A13CD /* Assets.xcassets */; };
 		5B9C897820EAF04A005A13CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C897620EAF04A005A13CD /* LaunchScreen.storyboard */; };
@@ -30,9 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B212D11F6515A30F36AB057 /* Pods-FletcherStripey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FletcherStripey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FletcherStripey/Pods-FletcherStripey.debug.xcconfig"; sourceTree = "<group>"; };
 		5B9C896A20EAF048005A13CD /* FletcherStripey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FletcherStripey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9C896D20EAF048005A13CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B9C896F20EAF048005A13CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B9C897220EAF048005A13CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B9C897420EAF04A005A13CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9C897720EAF04A005A13CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		5B9C899120EC0D91005A13CD /* FletcherStripey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FletcherStripey.entitlements; sourceTree = "<group>"; };
 		5B9C899720EC10C9005A13CD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5B9C899920EC10CC005A13CD /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		705DFC37F19D93BAA9261917 /* Pods-FletcherStripey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FletcherStripey.release.xcconfig"; path = "Pods/Target Support Files/Pods-FletcherStripey/Pods-FletcherStripey.release.xcconfig"; sourceTree = "<group>"; };
+		9A0809EC9CF68E91B389E713 /* Pods_FletcherStripey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FletcherStripey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			files = (
 				5B9C899820EC10C9005A13CD /* StoreKit.framework in Frameworks */,
 				5B9C899A20EC10CC005A13CD /* GameKit.framework in Frameworks */,
+				12511A04494E460AF4B113CE /* Pods_FletcherStripey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50BDBBA7E4F3835DF3E043A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B212D11F6515A30F36AB057 /* Pods-FletcherStripey.debug.xcconfig */,
+				705DFC37F19D93BAA9261917 /* Pods-FletcherStripey.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B9C896120EAF048005A13CD = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +86,7 @@
 				5B9C898120EAF04A005A13CD /* FletcherStripeyUITests */,
 				5B9C896B20EAF048005A13CD /* Products */,
 				5B9C899220EC0DE2005A13CD /* Frameworks */,
+				50BDBBA7E4F3835DF3E043A5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +104,6 @@
 			children = (
 				5B9C899120EC0D91005A13CD /* FletcherStripey.entitlements */,
 				5B9C896D20EAF048005A13CD /* AppDelegate.swift */,
-				5B9C896F20EAF048005A13CD /* ViewController.swift */,
 				5B9C897120EAF048005A13CD /* Main.storyboard */,
 				5B9C897420EAF04A005A13CD /* Assets.xcassets */,
 				5B9C897620EAF04A005A13CD /* LaunchScreen.storyboard */,
@@ -116,6 +128,7 @@
 			children = (
 				5B9C899920EC10CC005A13CD /* GameKit.framework */,
 				5B9C899720EC10C9005A13CD /* StoreKit.framework */,
+				9A0809EC9CF68E91B389E713 /* Pods_FletcherStripey.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B9C898720EAF04A005A13CD /* Build configuration list for PBXNativeTarget "FletcherStripey" */;
 			buildPhases = (
+				A536FFEC171E6B5B7FD8C792 /* [CP] Check Pods Manifest.lock */,
 				5B9C896620EAF048005A13CD /* Sources */,
 				5B9C896720EAF048005A13CD /* Frameworks */,
 				5B9C896820EAF048005A13CD /* Resources */,
+				5B2F63CB20F38F23000875C2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -227,13 +242,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B2F63CB20F38F23000875C2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		A536FFEC171E6B5B7FD8C792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FletcherStripey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B9C896620EAF048005A13CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5B9C899020EBF5FA005A13CD /* Stripey.swift in Sources */,
-				5B9C897020EAF048005A13CD /* ViewController.swift in Sources */,
 				5B9C896E20EAF048005A13CD /* AppDelegate.swift in Sources */,
 				5B9C898E20EAF0ED005A13CD /* StripeyController.swift in Sources */,
 			);
@@ -393,6 +441,7 @@
 		};
 		5B9C898820EAF04A005A13CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B212D11F6515A30F36AB057 /* Pods-FletcherStripey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -411,6 +460,7 @@
 		};
 		5B9C898920EAF04A005A13CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 705DFC37F19D93BAA9261917 /* Pods-FletcherStripey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
