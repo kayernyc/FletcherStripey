@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12511A04494E460AF4B113CE /* Pods_FletcherStripey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0809EC9CF68E91B389E713 /* Pods_FletcherStripey.framework */; };
 		5B5038CE20F4CD9700258598 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5038CD20F4CD9700258598 /* ConfigViewController.swift */; };
+		5B904B0A20F4E45900B83919 /* StripeyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B904B0920F4E45900B83919 /* StripeyConfiguration.swift */; };
 		5B9C896E20EAF048005A13CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C896D20EAF048005A13CD /* AppDelegate.swift */; };
 		5B9C897320EAF048005A13CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C897120EAF048005A13CD /* Main.storyboard */; };
 		5B9C897520EAF04A005A13CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C897420EAF04A005A13CD /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		2B212D11F6515A30F36AB057 /* Pods-FletcherStripey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FletcherStripey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FletcherStripey/Pods-FletcherStripey.debug.xcconfig"; sourceTree = "<group>"; };
 		5B5038CD20F4CD9700258598 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		5B904B0920F4E45900B83919 /* StripeyConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeyConfiguration.swift; sourceTree = "<group>"; };
 		5B9C896A20EAF048005A13CD /* FletcherStripey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FletcherStripey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9C896D20EAF048005A13CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9C897220EAF048005A13CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5B5038CD20F4CD9700258598 /* ConfigViewController.swift */,
+				5B904B0920F4E45900B83919 /* StripeyConfiguration.swift */,
 			);
 			path = ConfigController;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				5B9C899020EBF5FA005A13CD /* Stripey.swift in Sources */,
 				5B9C896E20EAF048005A13CD /* AppDelegate.swift in Sources */,
 				5B9C898E20EAF0ED005A13CD /* StripeyController.swift in Sources */,
+				5B904B0A20F4E45900B83919 /* StripeyConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

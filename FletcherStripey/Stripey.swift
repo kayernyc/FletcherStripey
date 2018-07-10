@@ -50,8 +50,6 @@ class Stripey: CALayer, CAAnimationDelegate {
 
   private let maxWidth: UInt32 = 200
   private let minWidth: UInt32 = 10
-  private let animiationTime = 1.0
-  private let transitionTime = 3.0
 
   private func timing() -> [NSNumber] {
     var values: [Float] = [0]
