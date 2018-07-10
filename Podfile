@@ -4,4 +4,5 @@ use_frameworks!
 target 'FletcherStripey' do
   use_frameworks!
   pod 'SwiftLint'
+  pod 'SnapKit'
 end

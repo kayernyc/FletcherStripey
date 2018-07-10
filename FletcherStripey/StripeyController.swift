@@ -37,16 +37,30 @@ class StripeyController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     UIApplication.shared.isIdleTimerDisabled = true
-    generateStripes(count: nil)
-  }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+    addGestures()
+
+    generateStripes(count: nil)
   }
 }
 
-extension StripeyController {}
+// MARK: - Gestures
+
+private extension StripeyController {
+
+  @objc func doubleTap() {
+    let configControl = ConfigViewController()
+    configControl.modalTransitionStyle = .crossDissolve
+    configControl.modalPresentationStyle = .overCurrentContext
+    self.present(configControl, animated: true, completion: nil)
+  }
+
+  func addGestures() {
+    let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTap))
+    doubleTapGesture.numberOfTapsRequired = 2
+    view.addGestureRecognizer(doubleTapGesture)
+  }
+}
 
 extension StripeyController: StripeyDelegate {
   func removeStripe(_ stripe: Stripey) {
