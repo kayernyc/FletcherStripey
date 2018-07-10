@@ -41,12 +41,12 @@ extension Color {
   }
 }
 
-protocol StripyDelegate: class {
-  func removeStripe(_ stripe: Stripy)
+protocol StripeyDelegate: class {
+  func removeStripe(_ stripe: Stripey)
 }
 
-class Stripy: CALayer, CAAnimationDelegate {
-  weak var stripeDelegate: StripyDelegate?
+class Stripey: CALayer, CAAnimationDelegate {
+  weak var stripeDelegate: StripeyDelegate?
 
   private let maxWidth: UInt32 = 200
   private let minWidth: UInt32 = 10

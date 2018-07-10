@@ -18,14 +18,14 @@ class StripeyController: UIViewController {
     view.layer.frame.size.width
   }()
 
-  var stripes = [Stripy]()
+  var stripes = [Stripey]()
 
   private func generateStripes(count: Int?) {
 
     let stripeCount = count ?? Int(arc4random_uniform(6) + 2)
 
     for _ in 0..<stripeCount {
-      let stripe = Stripy(viewWidth: viewWidth, viewHeight: viewHeight)
+      let stripe = Stripey(viewWidth: viewWidth, viewHeight: viewHeight)
       stripe.stripeDelegate = self
       stripes.append(stripe)
 
@@ -46,8 +46,10 @@ class StripeyController: UIViewController {
   }
 }
 
-extension StripeyController: StripyDelegate {
-  func removeStripe(_ stripe: Stripy) {
+extension StripeyController {}
+
+extension StripeyController: StripeyDelegate {
+  func removeStripe(_ stripe: Stripey) {
     if stripes.count < 25 {
       let newCount = stripes.count > 1 ? Int(arc4random_uniform(2) + 1) : Int(arc4random_uniform(6) + 1)
       generateStripes(count: newCount)
